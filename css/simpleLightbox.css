@@ -95,17 +95,25 @@
     margin: 0 auto;
 }
 
-.slbCaption {
-    font-size: 1.2em;
+.slbTitle h3, .slbCaption {
     position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
     margin-top: -1.07143em;
     line-height: 1.4;
     color: #fff;
     text-align: center;
     font-weight: 100;
+}
+
+.slbTitle h3 {
+    font-size: 1.4em;
+    top:0;
+}
+
+.slbCaption {
+    font-size: 1.2em;
+    top: 100%;
 }
 
 .slbCloseBtn,
@@ -287,8 +295,11 @@
 }
 
 @media (max-width: 640px) {
-    .slbCaption {
+    .slbTitle {
         font-size: 1.2em;
+    }
+    .slbCaption {
+        font-size: 1em;
     }
 
 }

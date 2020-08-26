@@ -32,8 +32,10 @@
         bindToItems: true,
         closeOnOverlayClick: true,
         nextOnImageClick: true,
+        showTitles: true,
         showCaptions: true,
 
+        titleAttribute: 'title',
         captionAttribute: 'description',
         urlAttribute: 'href',
 
@@ -53,6 +55,7 @@
     $.extend(SimpleLightbox.prototype, {
 
         items: [],
+        titles: [],
         captions: [],
 
         init: function() {
@@ -68,6 +71,7 @@
                     var $item = $(this);
 
                     self.items.push($item.attr(self.options.urlAttribute));
+                    self.titles.push($item.attr(self.options.titleAttribute));
                     self.captions.push($item.attr(self.options.captionAttribute));
 
                 });
@@ -83,6 +87,10 @@
 
                 this.items = this.options.items;
 
+            }
+
+            if (this.options.titles) {
+                this.titles = this.options.titles;
             }
 
             if (this.options.captions) {
@@ -145,6 +153,10 @@
                 var $imageCont = $('<div class="slbImageWrap"><img class="slbImage" src="' + url + '" /></div>');
 
                 this.$currentImage = $imageCont.find('.slbImage');
+
+                // if (this.options.showTitles && this.titles[position]) {
+                    $imageCont.prepend('<div class="slbTitle"><h3>' + this.titles[position] + '</h3></div>');
+                // }
 
                 if (this.options.showCaptions && this.captions[position]) {
                     $imageCont.append('<div class="slbCaption">' + this.captions[position] + '</div>');
