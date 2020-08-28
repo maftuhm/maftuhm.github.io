@@ -27,7 +27,7 @@
         closeBtnCaption: 'Close',
         nextBtnCaption: 'Next',
         prevBtnCaption: 'Previous',
-        loadingCaption: 'Loading...',
+        loadingCaption: '<i class="fas fa-spinner fa-pulse"></i>',
 
         bindToItems: true,
         closeOnOverlayClick: true,
