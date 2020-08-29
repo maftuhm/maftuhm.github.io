@@ -335,8 +335,15 @@ a.btn.work.active {
 
 /*--//banner--*/
 
-/*--/about--*/
-
+/*--/skills--*/
+.skills {
+    background: url(../images/exp.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
 h4.sub-tittle-w3 {
     font-size: 0.85em;
     color: #037ef3;
@@ -369,7 +376,7 @@ h4.progress-tittle-w3 {
 
 /*----*/
 
-/*--//about--*/
+/*--//skills--*/
 
 .services {
     background: url(../images/serve.jpg) no-repeat 0px 0px;
