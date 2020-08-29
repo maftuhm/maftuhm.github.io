@@ -11,6 +11,7 @@ body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
     background: #fff;
+    overflow-x: hidden;
 }
 
 body a {
@@ -335,9 +336,9 @@ a.btn.work.active {
 
 /*--//banner--*/
 /*--/about--*/
-.about-text p{
+/*.about-text p{
     padding: 0 2em;
-}
+}*/
 /*--//about--*/
 
 /*--/skills--*/
