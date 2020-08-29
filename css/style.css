@@ -334,6 +334,11 @@ a.btn.work.active {
 }
 
 /*--//banner--*/
+/*--/about--*/
+.about-text p{
+    padding: 0 2em;
+}
+/*--//about--*/
 
 /*--/skills--*/
 .skills {
