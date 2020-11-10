@@ -395,6 +395,7 @@ h4.progress-tittle-w3 {
 }
 
 .service-in .card {
+    height: 100%;
     padding: 2em 1em;
     border: none;
     transition: none;
