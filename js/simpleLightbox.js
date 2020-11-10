@@ -146,7 +146,17 @@
 
             if (this.options.videoRegex.test(url)) {
 
-                callback.call(self, $('<div class="slbIframeCont"><iframe class="slbIframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="' + url + '"></iframe></div>'));
+                var $iframeCont = $('<div class="slbIframeCont"><iframe class="slbIframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="' + url + '"></iframe></div>');
+                
+                // if (this.options.showTitles && this.titles[position]) {
+                    $iframeCont.prepend('<div class="slbTitle"><h3>' + this.titles[position] + '</h3></div>');
+                // }
+
+                if (this.options.showCaptions && this.captions[position]) {
+                    $iframeCont.append('<div class="slbCaption">' + this.captions[position] + '</div>');
+                }
+
+                callback.call(self, $iframeCont);
 
             } else {
 

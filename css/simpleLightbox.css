@@ -217,7 +217,7 @@
 }
 
 .slbIframeCont {
-    width: 80em;
+    width: 40em;
     height: 0;
     overflow: hidden;
     padding-top: 56.25%;
@@ -225,10 +225,10 @@
 
 .slbIframe {
     position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
+    top: 4%;
+    left: 4%;
+    width: 90%;
+    height: 90%;
     box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.6);
     background: #000;
 }
